@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+    height: 100vh;
+}
+
+.nowrap {
+    white-space: wrap;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.splash-bg {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    overflow-wrap: break-word;
+    font-size: 32px;
+    font-weight: bold;
+    color: hsl(0, 0%, 27%, 0.1);
+    padding: 0.5em;
+    position: relative;
+}
+
+.navigator {
+    width: 50%;
+    background-color: none;
+    border: none;
+    z-index: 1;
+    position: absolute;
+    min-height: 50%;
+    top: 15%;
+
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+
+    text-align: center;
+}
+
+.navigator h1 {
+    font-size: 6rem;
+    margin: 2rem 0rem;
+    color: #0085FF;
+    text-shadow: hsl(209, 100%, 50%, 0.25) 4px 4px 4px;
+}
+
+.navigator h2 {
+    font-size: 4rem;
+    margin: 2rem 0rem;
+}
+
+.btn {
+    padding: 1.5em;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0085FF;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.btn:hover {
+    background-color: hsla(209, 100%, 15%);
+}
+
+.avatar {
+    width: 6rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: hsl(0, 0%, 0%, 0.25) 4px 4px 16px;
+}
