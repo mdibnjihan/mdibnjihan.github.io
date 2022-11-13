@@ -1,220 +1,268 @@
+/* Basic CSS reset */
 *{
     border: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
-/* body {
-  height: 100vh;
-  width: 100vw;
-} */
-
-/* Font styling for viewbox */
-.viewbox {
-  font-size: 2rem;
-  font-family: 'IBM Plex Sans';
-  font-weight: 700;
+/* CSS variables */
+:root {
+    --bg_dark: hsla(0, 0%, 0%, 1);
+    --bg_light: hsla(0, 0%, 100%, 1);
+    --border: hsla(0, 0%, 85%, 1);
+    --border_light: hsla(0, 0%, 100%, 1);
+    --btn_primary_color: hsla(209, 100%, 50%, 1);
+    --btn_primary_shadow: hsla(209, 100%, 50%, 0.25);
+    --link_selected: hsla(209, 100%, 50%, 1);
+    --nav_link_hover_dark: hsla(0, 0%, 96%, 0.25);
+    --nav_link_hover_light: hsla(0, 0%, 96%, 1);
+    --shadow: hsla(0, 0%, 0%, 0.25);
+    --shadow1: hsla(0, 0%, 0%, 0.50);
+    --shadow2: hsla(0, 0%, 0%, 0.75);
+    --text_primary_dark: hsl(0, 0%, 100%, 1);
+    --text_primary_light: hsla(0, 0%, 0%, 1);
+    --text_secondary_dark: hsla(0, 0%, 0%, 0.75);
+    --text_secondary_light: hsla(0, 0%, 0%, 0.75);
 }
 
-.viewbox p {
-  color: hsl(0, 0%, 0%, 0.75);
-  font-weight: 400;
-  font-size: 1.2rem;
+
+/* Utility classes like */
+.mb12 {
+    margin-bottom: 12rem;
 }
 
+/* Scroll nbehaviour */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General styling for body elements */
+body {
+    font-family: 'IBM Plex Sans', 'Seagoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Styling the side navigation bar */
 .sidebar {
+    background-color: var(--bg_light); /* Black*/
+    border-right: 0.5px solid var(--border);
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 2em; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    border-right: 0.5px solid #D8D8D8;
-  }
-
-.sidebar .closebtn {
-    position: absolute;
+    position: fixed; /* Stay in place */
     top: 0;
-    right: 25px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    width: 0; /* 0 width - change this with JavaScript */
+    z-index: 1; /* Stay on top */
+}
+
+/* Styling close button of the sidebar */
+.sidebar .close-btn {
+    background-color: none;
+    color: var(--text_primary_light);
     font-size: 36px;
     margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    text-decoration: none;
+    top: 0;
 }
 
-.openbtn {
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    padding: 1em;
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
-    border: none;
-  }
-
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-#main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-
-
-.mail {
-    background-image: url(./res/mail.ico);
-}
-
-.profile {
-  margin-bottom: 1.5rem;
-}
-
-.avatar {
-    width: 64px;
-    height: 64px;
-    border: 2px solid white;
-    border-radius: 50%;
-    box-shadow: hsl(0, 0%, 0%, 0.25) 0px 4px 4px;
-    display: block;
-}
-
+/* Nav container styling*/
 .nav-container {
     padding: 1em;
-    font-family: 'IBM Plex Mono', monospace;
 }
 
-.contact-nav {
-  margin-bottom: 2rem;
+/* Styling for profile avatar */
+.profile-container {
+    margin-bottom: 1.5rem;
 }
 
-.contact__ul, li {
-  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  'IBM Plex Sans';
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 0.4rem;
+.profile-container .avatar {
+    border-radius: 50%;
+    border: 2px solid var(--border_light);
+    box-shadow: var(--shadow) 0px 4px 4px;
+    height: 64px;
+    width: 64px;
 }
 
-.contact__ul, li, a {
-  text-decoration: none;
-  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  'IBM Plex Sans';
-  font-size: 1rem;
-  color: black;
-  display: inline-block;
-}
-
-.contact__ul, li, a:hover {
-  text-decoration: underline;
-  color: #0085FF;
-  transform: 0.7s;
-}
-
+/* Name and description styling */
 .info {
-  margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .name {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-shadow: hsl(0, 0%, 0%, 0.25) 0px 2px 8px;
-  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  'IBM Plex Sans';
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: var(--shadow) 0px 2px 8px;
 }
 
 .description {
-  font-size: 1rem;
-  color: black;
-  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  'IBM Plex Sans';
+    font-size: 1rem;
+    color: var(--bg_dark);
 }
 
-.inf {
-  display: block;
-  padding: 0.75em 1em;
-  /* border: 1px solid red; */
-  margin: 0.25rem 0rem;
-  background-color: white;
-  display: block;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: small;
+/* Contact navigation links stlying */
+.contact-nav {
+    margin-bottom: 2rem;
 }
 
-.inf:hover {
-  background-color: #f5f5f5;
-  text-decoration: none;
+.contact-nav .icon {
+    height: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    width: 1rem; 
 }
 
-.inf:active{
-  color: #0085FF;
-  border-radius: 4px;
-  border-left: 4px solid #0085FF;
+.contact__ul, li {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    padding: 0;
 }
 
+.contact__ul li a {
+    color: var(--bg_dark);
+    font-size: 1rem;
+    text-decoration: none;
+}
 
+.contact__ul li a:hover, a:active {
+    color: var(--link_selected);
+    text-decoration: underline;
+}
+
+/* Styling for links of viewbox */
+.info-nav {
+    margin-bottom: 1.5rem;
+    padding: 0.5em 0em;
+}
+
+.info-link {
+    background-color: var(--bg_light);
+    border-radius: 4px;
+    color: var(--bg_dark);
+    display: block;
+    font-size: small;
+    font-weight: normal;
+    margin: 0.25rem 0rem;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    background-color: var(--nav_link_hover_light);
+    text-decoration: none;
+}
+
+.info-link:active {
+    background-color: var(--nav_link_hover_light);
+    border-left: 4px solid var(--link_selected);
+    border-radius: 4px;
+    color: var(--link_selected);
+    text-decoration: none;
+}
+
+/* Styling for slide open button */
+.openbtn {
+    background-color: var(--bg_light);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 32px;
+    padding: 0em;
+    width: 32px;
+}
+
+/* Styling for main */
+#main {
+  padding: 20px;
+  transition: margin-left .5s;
+}
+
+/* Font styling for viewbox */
 .viewbox {
-  border: 1px solid rgb(226, 226, 226);
+  border-radius: 1rem;
+  border: 1px solid var(--bg_light);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
   min-height: 100vh;
   overflow-y: hidden;
-  margin: 1rem;
-  border-radius: 1rem;
   padding: 1em;
 }
 
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.viewbox .cmd-like {
+    color: var(--shadow1);
+    font-weight: bold;
 }
 
-.work-card {
-  border: 1px solid hsl(0, 0%, 0%, 0.25);
+.viewbox p {
+    color: var(--shadow2);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
   border-radius: 8px;
-  padding: 0.5em;
-  width: 300px;
+  border: 1px solid var(--shadow);
   box-shadow: 2px 2px 8px hsl(0, 0%, 0%, 0.25);
   margin: 1rem 1rem 1rem 0rem;
+  padding: 0.5em;
+  width: 300px;
 }
 
 .btn {
+  background-color: #091e31;
+  border-radius: 4px;
+  border: 0;
   color: white;
   font-family: inherit;
   font-size: small;
   font-weight: 600;
-  background-color: #091e31;
-  border: 0;
   padding: 0.5em 1em;
-  border-radius: 4px;
 }
 
 .btn:hover {
   background-color: #2f3235;
 }
 
-  @media screen and (max-height: 450px) {
+
+.disabled {
+  background-color: rgb(214, 214, 214);
+}
+
+.disabled:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+/* Mdia Queries */
+
+@media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
-  }
+}
 
 @media screen and (min-width: 768px) {
     .sidebar {
-      width: 253.172px;
+      width: 254.938px;
     }
 
     body {
-      margin-left: 246.281px;
+      margin-left: 254.938px;
     }
 
-    .closebtn {
+    .close-btn {
       display: none;
     }
 
@@ -225,13 +273,6 @@
     
 }
 
-.disabled {
-  background-color: rgb(214, 214, 214);
-}
-
-.disabled:hover {
-  background-color: rgb(214, 214, 214);
-}
 
 @media screen and (max-width: 768px) {
   .experience {
