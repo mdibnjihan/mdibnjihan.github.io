@@ -186,7 +186,7 @@ body {
 /* Font styling for viewbox */
 .viewbox {
   border-radius: 1rem;
-  border: 1px solid var(--bg_light);
+  border: 1px solid var(--border);
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
