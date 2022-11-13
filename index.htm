@@ -4,20 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Md. Ibn Jihan portfolio</title>
+    <title>Md. Ibn Jihan</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./res/favicon-16x16.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="splash-bg unselectable" id="fill-text"></div>
-    <div class="navigator">
-        <img src="./res/Md. Ibn Jihan.jpg" alt="Md. Ibn Jihan" class="avatar">
-        <h1>Hi!</h1>
-        <h2> <span class="nowrap">Let’s Build</span><span class="nowrap"> it together</span></h2>
-        <button class="btn" onclick="siteNotReady()">View profile ></button>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="nav-container">
+            <div class="profile">
+                <img src="./res/101347202-removebg-preview-removebg-preview.jpg" alt="md.ibnjihan" class="avatar">
+            </div>
+            <div class="info">
+                <span class="name">Md. Ibn Jihan</span>
+                <span class="description">Developing technologies<br>for better services.</span>
+            </div>
+            <div class="contact-nav">
+                <ul class="contact__ul">
+                    <li><a href="mailto:md.ibnjihan@outlook.com"><img src="./res/mail.ico" style="vertical-align: middle; margin-right: 8px;"/>md.ibnjihan@outlook.com</a></li><br>
+                    <li><a href="tel:+8801304502377"><img src="./res/ic_fluent_call_24_filled.png" style="vertical-align: middle; margin-right: 8px; width: 18px;"/>+880 13045-02377</a></li><br>
+                    <li><a href="mailto:md.ibnjihan@outlook.com"><img src="./res/ic_fluent_location_24_filled.png" style="vertical-align: middle; margin-right: 8px; width: 18px"/>Faridpur, Dhaka, BD - 7804</a></li><br>
+                    <li><a href="https://github.com/mdibnjihan" target="_blank"><img src="./res/GitHub-Mark-32px.png" style="vertical-align: middle; margin-right: 8px; width: 16px;"/>mdibnjihan</a></li><br>
+                </ul>
+            </div>
+            <div class="info_nav">
+                <a href="#me" class="inf">About me</a>
+                <a href="#education" class="inf">Education</a>
+                <a href="#work" class="inf">Work</a>
+                <a href="#projects" class="inf">Projects</a>
+                <a href="#interest" class="inf">Interest</a>
+                <a href="#download" class="inf">Download</a>
+            </div>    
+        </div>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#60;</button>
+        <div class="viewbox">
+            <div id="about_me" style="margin-bottom: 12rem;">
+            <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat readme.txt</p><br>
+            <h1>Hey! 👋</h1><br>
+            <p>Hi I am Md. Ibn Jihan. I live in Faridpur, Dhaka, Bangladesh. I was born in 31st December, 2005. I started my school in 2009 at Sunrise Pre Cadet School, in 2014 I got mysel admitted to Faridpur Zilla School where I passed my PSC, JSC and SSC. Now I am currently studying at Govt. Rajendra College at K11 - Sceience. I am passionate about sciemce and technologies. I take part in various co-curricular activities. And, I love cats.
+                UwU.<br><br>
+                
+                I loved computers and technologies from my childhood. I am passionate about learning new things, growing interest about applying new solutions. I strated learning programming back in 2015. I am still learning new things and love open source. I mostly spend my leisure time by doing UI Design and coding. I started front-end career in 2018. I love to take challenges no matter how hard they are. I would to love to work with new people, new ennvironment.</p>
+            </div>
+            <div id="work" style="margin-bottom: 12rem;">
+                <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat work.txt</p><br>
+                <h1>Work Experience</h1><br>
+                <p>I love working with new people and new environment. It helps to to grow new skills and learn new things and apply techonolgies. Though, I love open source, I have also worked with various local companies.</p>
+                <div class="experience">
+                    <div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">Infitnity Math Club</p>
+                        <p>Faridpur, Dhaka, Bangladesh<br>6 July, 2020  - 8th August, 2021</p><br>
+                        <p>I worked with the development team there as a contributor. We have built the website and event management system.</p>
+                    </div>
+                    <div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">AR Technical Tips Pro</p>
+                        <p>Faridpur, Dhaka, Bangladesh<br>1 March, 2018  - 9 June, 2021</p><br>
+                        <p>Atonu Roy is a tehcnology review content creator. I worked with him and developed the website and giveaway management.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="education" style="margin-bottom: 12rem;">
+                <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat education.txt</p><br>
+                <h1>Education</h1><br>
+                <p>I started my school in 2009 at Sunrise Pre Cadet School, in 2014 I got mysel admitted to Faridpur Zilla School where I passed my PSC, JSC and SSC. Now I am currently studying at Govt. Rajendra College at K11 - Sceience.</p>
+                <div class="experience">
+                    <div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">PSC</p>
+                        <p>GPA: 5.00</p><br>
+                        <p>Year: 2015<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                    </div>
+                    <div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">JSC</p>
+                        <p>GPA: 4.86</p><br>
+                        <p>Year: 2018<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                    </div>
+                    <div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">SSC</p>
+                        <p>GPA: 5.00</p><br>
+                        <p>Year: 2021<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                    </div><div class="work-card">
+                        <p style="font-size: 1.5rem;
+                        font-weight: bold;
+                        ">Certification</p>
+                        <p>ICT YOUTH</p><br>
+                        <p>ICT Olympiad Bangladesh<br>Powered by: BrightSkills.com</p>
+                        <button id="verify-ict_youth" class="btn">Verify</button> 
+                    </div>
+                </div>
+                <div class="projects" style="margin-top: 12rem; margin-bottom: 12rem;">
+                    <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat projects.txt</p><br>
+                    <h1>Projects</h1><br>
+                    <p>Nothing to show at this moment.</p>
+                </div>
+                <div class="interest">
+                    <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat interest.txt</p><br>
+                    <h1>Interest</h1>
+                    <p style="margin-top: 3rem;">I love Cooking, Basketball, Movies, Writing & Games.</p>
+                </div>
+                <div class="Download" style="margin-top: 12rem;">
+                    <p style="font-weight: bold; color: hsl(0, 0%, 0%, 0.50) ;">$ cat download.txt</p><br>
+                    <h1>Download</h1>
+                    <p style="margin-top: 3rem;">To downlaod the CV, click on the button to continue.</p>
+                    <p style="background-color: rgb(184, 0, 0); 
+                    margin: 1rem 1re 1rem 0;
+                    border-radius: 10000px;
+                    padding: 0.5em;
+                    color: white;
+                    display: inline;
+                    font-size: small;
+                    font-weight: lighter;
+                    ">I am not available for work at this moment.</p><br>
+                    <button class="btn disabled">Download</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

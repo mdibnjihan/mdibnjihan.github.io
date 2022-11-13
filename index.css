@@ -1,89 +1,240 @@
-* {
+*{
+    border: 0;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-family: 'IBM Plex Mono', monospace;
+/* body {
+  height: 100vh;
+  width: 100vw;
+} */
+
+/* Font styling for viewbox */
+.viewbox {
+  font-size: 2rem;
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
 }
 
-body {
-    height: 100vh;
+.viewbox p {
+  color: hsl(0, 0%, 0%, 0.75);
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.nowrap {
-    white-space: wrap;
-}
-
-.unselectable {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-.splash-bg {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    overflow-wrap: break-word;
-    font-size: 32px;
-    font-weight: bold;
-    color: hsl(0, 0%, 27%, 0.1);
-    padding: 0.5em;
-    position: relative;
-}
-
-.navigator {
-    width: 50%;
-    background-color: none;
-    border: none;
-    z-index: 1;
-    position: absolute;
-    min-height: 50%;
-    top: 15%;
-
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
     left: 0;
-    right: 0;
-    margin-left: auto; 
-    margin-right: auto; 
+    background-color: rgb(255, 255, 255); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 2em; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border-right: 0.5px solid #D8D8D8;
+  }
 
-    text-align: center;
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.navigator h1 {
-    font-size: 6rem;
-    margin: 2rem 0rem;
-    color: #0085FF;
-    text-shadow: hsl(209, 100%, 50%, 0.25) 4px 4px 4px;
-}
-
-.navigator h2 {
-    font-size: 4rem;
-    margin: 2rem 0rem;
-}
-
-.btn {
-    padding: 1.5em;
-    font-family: inherit;
+.openbtn {
     font-size: 1rem;
-    font-weight: bold;
+    cursor: pointer;
     color: white;
-    background-color: #0085FF;
-    border: none;
+    padding: 1em;
+    height: 16px;
+    width: 16px;
     border-radius: 8px;
-    
+    border: none;
+  }
+
+
+.openbtn:hover {
+    background-color: #444;
 }
 
-.btn:hover {
-    background-color: hsla(209, 100%, 15%);
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+
+.mail {
+    background-image: url(./res/mail.ico);
+}
+
+.profile {
+  margin-bottom: 1.5rem;
 }
 
 .avatar {
-    width: 6rem;
+    width: 64px;
+    height: 64px;
+    border: 2px solid white;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: hsl(0, 0%, 0%, 0.25) 4px 4px 16px;
+    box-shadow: hsl(0, 0%, 0%, 0.25) 0px 4px 4px;
+    display: block;
+}
+
+.nav-container {
+    padding: 1em;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-nav {
+  margin-bottom: 2rem;
+}
+
+.contact__ul, li {
+  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  'IBM Plex Sans';
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.contact__ul, li, a {
+  text-decoration: none;
+  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  'IBM Plex Sans';
+  font-size: 1rem;
+  color: black;
+  display: inline-block;
+}
+
+.contact__ul, li, a:hover {
+  text-decoration: underline;
+  color: #0085FF;
+  transform: 0.7s;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.name {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: hsl(0, 0%, 0%, 0.25) 0px 2px 8px;
+  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  'IBM Plex Sans';
+}
+
+.description {
+  font-size: 1rem;
+  color: black;
+  font-family: /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  'IBM Plex Sans';
+}
+
+.inf {
+  display: block;
+  padding: 0.75em 1em;
+  /* border: 1px solid red; */
+  margin: 0.25rem 0rem;
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: small;
+}
+
+.inf:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+.inf:active{
+  color: #0085FF;
+  border-radius: 4px;
+  border-left: 4px solid #0085FF;
+}
+
+
+.viewbox {
+  border: 1px solid rgb(226, 226, 226);
+  min-height: 100vh;
+  overflow-y: hidden;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1em;
+}
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.work-card {
+  border: 1px solid hsl(0, 0%, 0%, 0.25);
+  border-radius: 8px;
+  padding: 0.5em;
+  width: 300px;
+  box-shadow: 2px 2px 8px hsl(0, 0%, 0%, 0.25);
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.btn {
+  color: white;
+  font-family: inherit;
+  font-size: small;
+  font-weight: 600;
+  background-color: #091e31;
+  border: 0;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #2f3235;
+}
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+@media screen and (min-width: 768px) {
+    .sidebar {
+      width: 253.172px;
+    }
+
+    body {
+      margin-left: 246.281px;
+    }
+
+    .closebtn {
+      display: none;
+    }
+
+    .openbtn {
+      display: none;
+    }
+
+    
+}
+
+.disabled {
+  background-color: rgb(214, 214, 214);
+}
+
+.disabled:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    flex-flow: column;
+  }
 }

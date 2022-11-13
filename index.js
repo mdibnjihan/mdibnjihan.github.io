@@ -1,40 +1,15 @@
-let fillText = document.querySelector("#fill-text");
-let width = window.innerWidth;
-let height = window.innerHeight;
-function binRenderer() {
-    // Checks the height and width of the screen size
-    let charOnWidth = width / 32;
-    let charOnHeight = height / 32;
+function openNav() {
+    document.getElementById("mySidebar").style.width = "auto";
+    /* let element = document.getElementById("mySidebar");
+    let applied_styles = window.getComputedStyle(element);
+    let current_width = applied_styles.width;
+    let current_window_width = window.innerWidth;
+    let margin_to_set = current_window_width - 246.281; */
+    // style_applied.width
+    /* document.getElementById("main").style.marginLeft = "0"; */
+  }
 
-    // Gets the area of the screen size
-    // The decicated font size in 32 pixels
-    let charCount = charOnHeight * charOnWidth;
-
-    // Checks how many times space, 0, space, 1 has to be repeated
-    let numberOfSet = Math.round(charCount) / 2;
-    let binSets = " 0 1";
-
-    //Initializaton for DOM
-    let text = "";
-
-    text += binSets.repeat(numberOfSet);
-
-    fillText.innerHTML = text;
-}
-
-binRenderer();
-
-function siteNotReady() {
-    alert(
-        `
-        The webpage is not ready yet.
-        Please visit soon.
-        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣿⣿⡆⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⣾⣿⡆⠀
-⠀⠀⠀⣿⣿⡇⠀⠀⢸⣿⢰⣿⡆⠀⣾⣿⡆⠀⣾⣷ ⣿⣿⡇⠀⠀⣿⣿⡇⠀
-⠀⠀⠀⣿⣿⡇⠀⠀⢸⣿⠘⣿⣿⣤⣿⣿⣿⣤⣿⡇⢻⣿⡇⠀⠀⣿⣿⡇⠀
-⠀⠀⠀⣿⣿⡇⠀⠀⢸⡿⠀⢹⣿⣿⣿⣿⣿⣿⣿⠁⢸⣿⣇⠀⢀⣿⣿⠇⠀
-⠀⠀⠀⠙⢿⣷⣶⣶⡿⠁⠀⠈⣿⣿⠟⠀⣿⣿⠇⠀⠈⠻⣿⣶⣾⡿⠋⠀⠀
-        `
-    )
-}
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
