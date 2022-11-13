@@ -1,3 +1,3 @@
 # mdibnjihan.github.io
 
-Contains files for my GigHub pages.
+Contains files for my GitHub pages.
