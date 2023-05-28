@@ -1,73 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/> 
-    <title>Portfolio | Md. Ibn Jihan</title>
+    <title>Md. Ibn Jihan - profile</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./res/favicon-16x16.png">
+
+    <!-- Connecting with the styling for the website. -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing IMB Plex Sans from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <pre>
-    =======================================
-    MD. IBN JIHAN (C) 2023 git::mdibnjihan
-    =======================================
-    <span style="color: rgb(0, 212, 0); font-weight: bolder;">$ about-me</span>
-                                      .
-           !#BPY!:   ..::::..   :!JPB#?   
-           G@@@@@&GGB#&&&&&&#BGG&@@@@@#           
-           P@@@@@@@@@@@@@@@@@@@@@@@@@@G           
-          :G@@@@@@@@@@@@@@@@@@@@@@@@@@B^          
-         :#@@@@@@@@@@@@@@@@@@@@@@@@@@@@&~          
-         P@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B         
-         #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&.        
-         G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B         
-         !@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@?         
-          J@@@@@@@@@@@@@@@@@@@@@@@@@@@@5          
-           !G@@@@@@@@@@@@@@@@@@@@@@@@B7            
-      .??^   ^?5B#&&@@@@@@@@@@&&#BP?^              
-      .!P@B!     ..7&@@@@@@@@@?:.                 
-         !@@P~:...^#@@@@@@@@@@&:                  
-          ~B@@@&&&@@@@@@@@@@@@@!   
-            ^7JYYJY@@@@@@@@@@@@!                  
-                  ^@@@@@@@@@@@@~                  
-               .  ~@@@@@@@@@@@@!
+    <header>
+        <div id="sideNav" class="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <div class="nav-container">
+                <div class="profile-container">
+                    <img src="./res/md.ibnjihan-avatar.jpg" alt="md.ibnjihan" class="avatar">
+                </div>
+                <div class="info">
+                    <span class="name">Md. Ibn Jihan</span>
+                    <span class="description">Developing technologies<br>for better services.</span>
+                </div>
+                <nav>
+                    <div class="contact-nav">
+                        <ul class="contact__ul">
+                            <li>
+                                <a href="mailto:md.ibnjihan@outlook.com">
+                                    <img src="./res/mail.ico" class="icon"/>
+                                    md.ibnjihan@outlook.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+8801304502377">
+                                    <img src="./res/ic_fluent_call_24_filled.png" class="icon"/>+880 13045-02377
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:md.ibnjihan@outlook.com">
+                                    <img src="./res/ic_fluent_location_24_filled.png" class="icon"/>
+                                    Faridpur, Dhaka, BD - 7804
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/mdibnjihan" target="_blank">
+                                    <img src="./res/GitHub-Mark-32px.png" class="icon"/>
+                                    mdibnjihan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-nav">
+                        <a href="#about" class="info-link">About me</a>
+                        <a href="#work" class="info-link">Work</a>
+                        <a href="#education" class="info-link">Education</a>
+                        <a href="#projects" class="info-link">Projects</a>
+                        <a href="#interest" class="info-link">Interest</a>
+                        <a href="#download" class="info-link">Download</a>
+                    </div>
+                </nav>    
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">
+                <img src="./res/ic_fluent_pane_open_24_filled.png" height="24" width="24" class="icon">
+            </button>
+            <div class="viewbox">
+                <div id="about" class="mb12">
+                <p class="cmd-like">$ cat readme.txt</p><br>
+                <h1>Hey! 👋</h1><br>
+                <p>Hi I am Md. Ibn Jihan. I live in Faridpur, Dhaka, Bangladesh. I was born in 31st December, 2005. I started my school in 2009 at Sunrise Pre Cadet School, in 2014 I got mysel admitted to Faridpur Zilla School where I passed my PSC, JSC and SSC. Now I am currently studying at Govt. Rajendra College at K11 - Sceience. I am passionate about science and technologies. I take part in various co-curricular activities. And, I love cats.
+                    UwU.<br><br>
 
-    Name: Md. Ibn JIHAN
-    Code name: $BlueKat
-    Born on: 31.12.2005 (DD/MM/YYYY)
-    Domain: .BD (Kushtia - 7000)
-    Language packs: Bangla (Local-BD), English (International-en_US)
-
-    Intelligence version: vK-12_STANDARD
-    Intelligence module developer: Govt. Rajendra College
-    Biological mutation status: TRUE - Bug slayer
-    Current status: Doesn't have a life.
-    Likes: Programming, Cats, Music, KDrama, Anime
-    Hates: Bugs, flying coackroaches
-
-    Modules: HTML, CSS, JavaScript, C++, C#, SQL
-    Libs: XHTML, Tailwind, Bootstrap, React JS, Angular, Git
-    </pre>
-    <pre>
-    <span style="color: rgb(0, 212, 0); font-weight: bolder;">$ experience</span>
-    Name: AR Atonu Roy (Volunteer | 2021)
-    Projects: Giveaway management system (_PRIVATE_)
-
-    Name: Faridpur Math Club (Volunteer | 2022)
-    Projects: Infinity Education website (_PUBLIC_)
-
-    Name: Ehsan Haque Sifat (Volunteer | 2023)
-    Projects: Portfolio website (_PUBLIC_SRC:: <a class="link" style="color: yellow
-    " href="https://www.github.com/mdibnjihan/influencer-sifat/">https://www.github.com/mdibnjihan/influencer-sifat/</a>)
-    </pre>
-    <pre>
-    <span style="color: rgb(0, 212, 0); font-weight: bolder;">$ contact</span>
-    Email: <a class="link" style="color: yellow
-    " href="mailto::md.ibnjihan@outlook.com">md.ibnjihan@outlook.com</a>
-    Number: +880 01304502377
-    Address: Faridpur, Dhaka, Bangladesh
-    Post code: 7804
-    </pre>
+                    I loved computers and technologies from my childhood. I am passionate about learning new things, growing interest about applying new solutions. I started learning programming back in 2015. I am still learning new things and love open source. I mostly spend my leisure time by doing UI Design and coding. I started front-end career in 2018. I love to take challenges no matter how hard they are. I would love to work with new people, new environment.</p>
+                </div>
+                <div id="work" class="mb12">
+                    <p class="cmd-like">$ cat work.txt</p><br>
+                    <h1>Work Experience</h1><br>
+                    <p>I love working with new people and new environment. It helps me to grow new skills, learn new things and apply techonolgies. Though, I love open source, I have also worked with various local companies.</p>
+                    <div class="experience">
+                        <div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">Infitnity Math Club</p>
+                            <p>Faridpur, Dhaka, Bangladesh<br>6 July, 2020  - 8th August, 2021</p><br>
+                            <p>I worked with the development team there as a contributor. We have built the website and event management system.</p>
+                        </div>
+                        <div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">AR Technical Tips Pro</p>
+                            <p>Faridpur, Dhaka, Bangladesh<br>1 March, 2018  - 9 June, 2021</p><br>
+                            <p>Atonu Roy is a tehcnology review content creator. I worked with him and developed the website and giveaway management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="mb12">
+                    <p class="cmd-like">$ cat education.txt</p><br>
+                    <h1>Education</h1><br>
+                    <p>I started my school in 2009 at Sunrise Pre Cadet School, in 2014 I got mysel admitted to Faridpur Zilla School where I passed my PSC, JSC and SSC. Now I am currently studying at Govt. Rajendra College at K11 - Sceience.</p>
+                    <div class="experience">
+                        <div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">PSC</p>
+                            <p>GPA: 5.00</p><br>
+                            <p>Year: 2015<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                        </div>
+                        <div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">JSC</p>
+                            <p>GPA: 4.86</p><br>
+                            <p>Year: 2018<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                        </div>
+                        <div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">SSC</p>
+                            <p>GPA: 5.00</p><br>
+                            <p>Year: 2021<br>Board: Dhaka<br>School: Faridpur Zilla School</p>
+                        </div><div class="card">
+                            <p style="font-size: 1.5rem;
+                            font-weight: bold;
+                            ">Certification</p>
+                            <p>ICT YOUTH</p><br>
+                            <p>ICT Olympiad Bangladesh<br>Powered by: BrightSkills.com</p>
+                            <button id="verify-ict_youth" class="btn" onclick="verify()">Verify</button> 
+                        </div>
+                    </div>
+                    <div id="projects" class="mb12">
+                        <p class="cmd-like">$ cat projects.txt</p><br>
+                        <h1>Projects</h1><br>
+                        <p>Nothing to show at this moment.</p>
+                    </div>
+                    <div id="interest" class="mb12">
+                        <p class="cmd-like">$ cat interest.txt</p><br>
+                        <h1>Interest</h1>
+                        <p style="margin-top: 3rem;">I love Cooking, Basketball, Movies, Writing & Games.</p>
+                    </div>
+                    <div id="download" class="mb12">
+                        <p class="cmd-like">$ cat download.txt</p><br>
+                        <h1>Download</h1>
+                        <p style="margin-top: 3rem;">To downlaod the resume, click on the button to continue.</p>
+                        <p style="background-color: rgb(184, 0, 0); 
+                        margin: 1rem 1re 1rem 0;
+                        border-radius: 10000px;
+                        padding: 0.5em 1em;
+                        color: white;
+                        display: inline;
+                        font-size: small;
+                        font-weight: lighter;
+                        ">I am not available for work at this moment.</p><br>
+                        <button class="btn disabled">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Connects Javascript file to HTML-->
+    <script src="index.js"></script>
 </body>
 </html>
